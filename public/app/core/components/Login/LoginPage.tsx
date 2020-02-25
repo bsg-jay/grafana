@@ -9,12 +9,12 @@ import LoginCtrl from './LoginCtrl';
 import { LoginForm } from './LoginForm';
 import { ChangePassword } from './ChangePassword';
 import { Branding } from 'app/core/components/Branding/Branding';
-import { Footer } from 'app/core/components/Footer/Footer';
+// import { Footer } from 'app/core/components/Footer/Footer';
 
 export const LoginPage: FC = () => {
   return (
     <Branding.LoginBackground className="login container">
-      <div className="login-content">
+      <div className="login-content" style={{ border: '2px solid #333E47' }}>
         <div className="login-branding">
           <Branding.LoginLogo className="login-logo" />
         </div>
@@ -33,7 +33,7 @@ export const LoginPage: FC = () => {
             skipPasswordChange,
             isChangingPassword,
           }) => (
-            <div className="login-outer-box">
+            <div className="login-outer-box" style={{ backgroundColor: '#333E47' }}>
               <div className={`login-inner-box ${isChangingPassword ? 'hidden' : ''}`} id="login-view">
                 {!disableLoginForm ? (
                   <LoginForm
@@ -63,7 +63,7 @@ export const LoginPage: FC = () => {
 
         <div className="clearfix" />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </Branding.LoginBackground>
   );
 };

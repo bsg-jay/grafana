@@ -8,20 +8,21 @@ export interface BrandComponentProps {
 
 export const LoginLogo: FC<BrandComponentProps> = ({ className }) => {
   const maxSize = css`
-    max-width: 150px;
+    // max-width: 150px;
   `;
 
   return (
     <>
-      <img className={cx(className, maxSize)} src="public/img/grafana_icon.svg" alt="Grafana" />
-      <div className="logo-wordmark" />
+      <img className={cx(className, maxSize)} src="public/img/bsg_logo.png" alt="BSG Partners" />
+      {/* <div className="logo-wordmark" /> */}
     </>
   );
 };
 
 export const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
   const background = css`
-    background: url(public/img/heatmap_bg_test.svg);
+    // background: url(public/img/heatmap_bg_test.svg);
+    background: #f7f8fa;
     background-size: cover;
   `;
 
@@ -29,7 +30,7 @@ export const LoginBackground: FC<BrandComponentProps> = ({ className, children }
 };
 
 export const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
-  return <img className={className} src="public/img/grafana_icon.svg" alt="Grafana" />;
+  return <img className={className} src="public/img/bsg_favicon.png" alt="Grafana" />;
 };
 
 export class Branding {

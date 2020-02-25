@@ -12,9 +12,9 @@ $login-border: #8daac5;
   justify-content: center;
   color: #d8d9da;
 
-  & a {
-    color: #d8d9da !important;
-  }
+  // & a {
+  //   color: #1e2028 !important;
+  // }
 
   & .btn-primary {
     @include buttonBackground(#ff6600, #bc3e06);
